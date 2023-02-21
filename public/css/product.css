@@ -1,0 +1,29 @@
+#productImage{
+    height: 180px;
+    width: 180px;
+    border: 1px solid red;
+}
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    list-style: none;
+    
+}
+.products>li{
+    margin-top: 2rem;
+    border-radius: 5rem;
+    
+}
+img{
+    border-radius: 50%;
+}
+#product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+}

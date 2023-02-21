@@ -1,0 +1,27 @@
+[
+  {
+    "name": "iPhone 14",
+    "price": 140000,
+    "country": "USA"
+  },
+  {
+    "name": "Freedge",
+    "price": 14000,
+    "country": "China"
+  },
+  {
+    "name": "Achar",
+    "price": 150,
+    "country": "Nepal"
+  },
+  {
+    "name": "Yamaha MoterBike",
+    "price": 180000,
+    "country": "India"
+  },
+  {
+    "name": "Bajaj MoterBike",
+    "price": 280000,
+    "country": "Japan"
+  }
+]

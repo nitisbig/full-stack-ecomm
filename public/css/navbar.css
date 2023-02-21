@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    background-color: rgb(64, 49, 49);
+    height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.menuSide ul{
+    display: flex;
+    list-style: none;
+}
+
+.menuSide ul>li>a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+.cartSide img{
+    height: 44px;
+    width: 44px;
+    color: aliceblue;
+}
+.cartSide{
+    margin: 0 3rem;
+}

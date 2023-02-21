@@ -1,0 +1,35 @@
+<%- include("partials/Navbar") -%>
+<h1>Top Product</h1>
+
+<ul class="products">
+    <% Data.forEach((product,i)=>{%>
+        <li id="product" >
+            <div class="w-30">
+                <img id="productImage" src="<%= product.url %>" alt="">
+            <h2 id="productName" class="text-primary fs-3">Name: <%= product.name  %></h2>
+            <h4 class="text-danger fs-5">Price: <%= Number(product.price) %>$</h4>
+            <h4 class="text-info fs-5">Country: <%= product.country %></h4>
+            <h5  id="price<%= i %>">0</h5>
+            <div class="btn">
+                <button class="btn btn-success" onclick="btnHandler('<%= i %>')">Buy</button>
+                <form action="/delete/<%= product._id %>" method="post">
+                    <button class="btn btn-danger">Delete</button>
+                </form>
+                <form action="/update/<%= product._id %>" method="post">
+                    <button class="btn btn-primary">Edit</button>
+                </form>
+            </div>
+            </div>
+        </li>
+        
+        <%
+    }) %>
+</ul>
+<script>
+    let start = []
+    function btnHandler(i){
+        start[i] = start[i] || 0;
+        let val = document.getElementById('price'+i);
+        val.innerHTML = ++start[i];
+    }
+</script>
